@@ -7,7 +7,7 @@
     <title>Document</title>
     <style>
         body{
-            background-image: url(https://wallpapers.com/images/hd/hd-vacation-house-in-the-beach-j4jasqgcc5ismew8.jpg);
+            background-image: url(https://img.freepik.com/free-photo/vivid-transparent-orange-autumn-leaf_23-2148239677.jpg);
             background-size: cover;
         }
         .m{
@@ -16,34 +16,47 @@
             background-color: black;
             border-radius: 50px;
         }
-        #k{
+        fieldset{
             
-            padding: 30px;
-            margin: 50px;
-            border-radius: 50px;
-        }
-        a{
-            margin: 195px;
+            color: rgb(43, 2, 249);
+            text-shadow: 30px;
+            margin: 40PX;
+            border-top-left-radius: 85px;
+            border-bottom-right-radius: 85px;
+            
         }
         button{
             background-color: blue;
             border-radius: 50px;
             color: blanchedalmond;
             padding: 5px;
+            margin: 10PX;
+        }
+        #e{
+            padding: 30px;
+            margin: 50px;
+            border-radius: 50px;
+        }
+        a{
+            margin: 159px;
         }
     </style>
 </head>
 <body>
     <center>
         <div class="m">
-        <marquee behavior="alternate" direction=""><h1>THIS IS INDEXAPP1 PAGE</h1></marquee>
+        <marquee behavior="alternate" direction=""><h1>THIS IS GENERIC URL PAGE</h1></marquee>
         </div>
     </center>
-        <div id="k">
+    
+        <div id="e">
+            <fieldset><marquee behavior="" direction="">MAHESH</marquee>
+        <a href="{% url 'app1:indexapp1' %}"><button>app1</button></a>
         <a href="{% url 'app2:indexapp2' %}"><button>app2</button></a>
-        <a href="{% url 'generic' %}"><button>generic</button></a>
         <a href="{% url 'facebook' %}"><button>facebook</button></a>
+            </fieldset>
         </div>
+        
     
 </body>
 </html>

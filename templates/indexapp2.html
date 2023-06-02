@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>login</title>
+    <style>
+        body{
+            background-image: url(https://images.pexels.com/photos/1042423/pexels-photo-1042423.jpeg?cs=srgb&dl=pexels-hoang-le-1042423.jpg&fm=jpg);
+            background-size: cover;
+        }
+        .m{
+            width: 450px;
+            color: rgb(244, 7, 240);
+            background-color: rgb(7, 251, 15);
+            border-radius: 50px;
+        }
+        #t{
+            padding: 30px;
+            margin: 50px;
+            border-radius: 50px;
+        }
+        fieldset{
+            border-radius: 50px;
+            color: brown;
+            text-shadow: 30px;
+            
+        }
+        button{
+            
+            margin-left: 500px;
+        }
+        button{
+            background-color: blue;
+            border-radius: 50px;
+            color: blanchedalmond;
+            padding: 5px;
+        }
+    </style>
 </head>
 <body>
     <center>
-        <h1>this is app2 page</h1>
-        <h1>yeah fine and you</h1>
+        <div class="m">
+        <marquee behavior="alternate" direction=""><h1>THIS IS INDEXAPP2 PAGE</h1></marquee>
+        </div>
     </center>
+    
+        <div id="t">
+            <fieldset>MAHESH
+        <a href="{% url 'app1:indexapp1' %}"><button>app1</button></a>
+        <a href="{% url 'generic' %}"><button>generic</button></a>
+            </fieldset>
+        </div>
 </body>
 </html>

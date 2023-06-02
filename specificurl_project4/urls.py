@@ -17,8 +17,11 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 import app1,app2
+from generic.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('generic/',generic,name='generic'),
     path('app1/',include('app1.urls')),
     path('app2/',include('app2.urls')),
+    path('faceboo/',facebook,name='facebook'),
 ]
